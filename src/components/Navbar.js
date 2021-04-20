@@ -1,5 +1,6 @@
 import React from 'react'
 import  './Navbar.css'
+import {CartWidget} from './CartWidget'
 
  export const Navbar = () => {
     return (
@@ -19,8 +20,12 @@ import  './Navbar.css'
                         </li>
                         <li>
                          <a>Contacto</a>
+                        </li>                             
+                        <li>
+                        <a><CartWidget /></a>                   
                         </li>
                     </ul>
+                    
         </>
     )
 }
