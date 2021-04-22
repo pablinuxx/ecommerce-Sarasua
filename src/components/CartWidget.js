@@ -4,13 +4,13 @@ import LocalMallIcon from '@material-ui/icons/LocalMall';
 export const CartWidget = () => {
     return (
         <div>
-            <button>
+            <a>
                 <LocalMallIcon 
                 fontSize="small"
                 color="primary"
                 />
 
-            </button>
+            </a>
         </div>
     )
 }
