@@ -1,30 +1,30 @@
 import React from "react";
 import "./Navbar.css";
 import { CartWidget } from "./CartWidget";
+import logo from '../assets/logo.png';
 
 export const Navbar = () => {
   return (
     <>
-      <ul className="menu">
-        <li>
-          <a className="nav-link">Inicio</a>
-        </li>
-        <li>
-          <a className="nav-link">Productos</a>
-        </li>
-        <li>
-          <a className="nav-link">Servicios</a>
-        </li>
-        <li>
-          <a className="nav-link">Acerca de</a>
-        </li>
-        <li>
-          <a className="nav-link">Contacto</a>
-        </li>
-        <li>
-          <CartWidget />
-        </li>
-      </ul>
+      <header>
+        <nav>
+          <div className="menu">
+            <div className="brand">
+              <img src= {logo} alt="logo" />
+            </div>
+            <div className="links">
+              <a href="#">Categorias</a>
+              <a href="#">Ofertas</a>
+              <a href="#">Ayuda</a>
+            </div>
+          </div>
+          <div className="compra">
+            <button className="carrito">
+            <CartWidget />
+            </button>
+          </div>
+        </nav>
+      </header>
     </>
   );
 };

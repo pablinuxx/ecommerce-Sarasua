@@ -6,12 +6,10 @@ import { ItemCount } from "./components/ItemCount";
 function App() {
   return (
     <div className="App">
-      <div className="container">
         <Navbar />
 
         <ItemListContainer />
         <ItemCount />
-      </div>
     </div>
   );
 }
