@@ -9,7 +9,7 @@ function App() {
         <Navbar />
 
         <ItemListContainer />
-        <ItemCount />
+        <ItemCount stock = { 2 } />
     </div>
   );
 }

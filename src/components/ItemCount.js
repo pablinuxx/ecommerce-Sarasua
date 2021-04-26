@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
-export const ItemCount = () => {
-  const [count, setCount] = useState(1);
+export const ItemCount = ({stock}) => {
+  const [count, setCount] = useState(stock);
   const Aumentar = () => {
     setCount(count + 1);
   };
   const Restar = () => {
-    count <= 0 ? alert("Menor Igual a Cero") : setCount(count - 1);
+    count === stock ? alert("Limite de Stock") : setCount(count - 1);
   };
   return (
     <>
